@@ -91,9 +91,9 @@ class Random {
   }
   
   // Использование
-  const low = 1;
-  const high = 10;
-  const array = [1, 2, 3, 4, 5];
+  const low = parseInt(prompt("Минимум: "));
+  const high = parseInt(prompt("Минимум: "));
+  const array = prompt("Элементы массива через запятую").split(",").map(Number);
   
   const randomDouble = Random.nextDouble(low, high);
   const randomInt = Random.nextInt(low, high);
